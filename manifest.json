@@ -1,0 +1,20 @@
+{
+  "name": "my-awesome-checkout",
+  "vendor": "github/ganobrega",
+  "version": "0.0.0",
+  "title": "The Best Ever Checkout",
+  "description": "The Best Ever Checkout configuration",
+  "builders": {
+    "checkout-ui-custom": "0.x",
+    "docs": "0.x"
+  },
+  "scripts": {
+    "prereleasy": "cd checkout-ui-custom/ && deno task preproduction",
+    "postreleasy": "vtex publish --verbose"
+  },
+  "credentialType": "absolute",
+  "registries": [
+    "smartcheckout"
+  ],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

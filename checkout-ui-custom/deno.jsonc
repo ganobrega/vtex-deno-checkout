@@ -1,0 +1,9 @@
+{
+    "imports": {
+        // "vtex-deno-checkout/typings/": "https://github.com/ganobrega/vtex-deno-checkout/checkout-ui-custom/typings/"
+    },
+    "tasks": {
+        "start": "deno run -A --watch=checkout6-custom.scss,checkout6-custom.ts,components/,helpers/,layout/,styles/,typings/ build.ts",
+        "preproduction": "deno run -A build.ts --preproduction"
+    }
+}
